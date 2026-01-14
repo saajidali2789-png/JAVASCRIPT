@@ -78,24 +78,57 @@
 
 //practice qustion
 
-let qustion  = prompt("Enter a Number :");
+// let qustion  = prompt("Enter a Number :");
 
-let arr5 = [];
-for(let p = 1 ; p <= qustion ; p++){
-    arr5[p-1] = p;
+// let arr5 = [];
+// for(let p = 1 ; p <= qustion ; p++){
+//     arr5[p-1] = p;
+// }
+
+// const sum = arr5.reduce((res,curr) => {
+//     return res + curr;
+// });
+
+// console.log(sum);
+
+// const mul = arr5.reduce((res,curr) => {
+//     return res * curr;
+// });
+
+// console.log(mul);
+//practice question with javascript involving in the project
+
+let DATA = "secret information";
+
+class User{
+    constructor(name,email){
+        this.name = name;
+        this.email = email;
+    }
+
+    viewData(){
+        console.log("data =", DATA);
+    }
 }
 
-const sum = arr5.reduce((res,curr) => {
-    return res + curr;
-});
+class Admin extends User{
+    constructor(name,email){
+        super(name,email);
+    }
+    editData(){
+        DATA = "some new value";
+    }
+}
 
-console.log(sum);
+let student1 = new User("shraddha","abc@gmail.com");
+let student2 = new User("aman","aman@mgmail.com");
 
-const mul = arr5.reduce((res,curr) => {
-    return res * curr;
-});
 
-console.log(mul);
+let teacher1 = new User("Dean","dean@gmail.com");
+let teacher2 = new User("Abc","abc@gmail.com");
 
+//another practice question
+
+let admin1 = new Admin();
 
 
