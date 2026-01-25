@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="timer-app">
+        <h1>⏱️ Countdown Timer</h1>
+
+        <div class="time-input">
+            <input type="number" id="minutesInput" placeholder="Enter minutes (1-999)" min="1" max="999">
+        </div>
+
+        <div class="timer-display" id="timerDisplay">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="controls">
+            <button id="startBtn">▶ Start</button>
+            <button id="pauseBtn" disabled>⏸ Pause</button>
+            <button id="resetBtn" disabled>↻ Reset</button>
+        </div>
+
+        <div class="status-message" id="statusMessage"></div>
+    </div>
+
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
